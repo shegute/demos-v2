@@ -21,6 +21,15 @@
             text-decoration: none;
         }
 
+        a.elementAndClassExample {
+        //Will only be applied to <a> tags and if the class name matches 'elementAndClassExample'
+        //The rest of any other <a> tags in the page that dont have the class name will have the above css settings applied.
+          color: red;
+       
+          padding: 0 1em;
+          text-decoration: none;
+        }
+
         a:hover {
             text-decoration: underline;
         }
