@@ -2,6 +2,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'saa-app',
+  encapsulation: ViewEncapsulation.None,
   template: `
       <header>
           <h1>Styling Angular Applications</h1>
@@ -21,6 +22,14 @@ import { Component, ViewEncapsulation } from '@angular/core';
             margin: 1.5em 0;
             padding: 1em 1.2em;
         }
+
+        div {
+            background: #2A9FBC;
+            border-radius: 0.5em;
+            margin: 1.5em 0;
+            padding: 1em 1.2em;
+        }
+
 
     `]
 })

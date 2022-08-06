@@ -2,7 +2,6 @@ import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
     selector: 'saa-app-nav',
-    encapsulation: ViewEncapsulation.None,
     template: `
         <div>
             <ul>
@@ -22,13 +21,6 @@ import { Component, ViewEncapsulation } from '@angular/core';
         </div>
     `,
     styles: [`
-
-        div {
-            background: #2A9FBC;
-            border-radius: 0.5em;
-            margin: 1.5em 0;
-            padding: 1em 1.2em;
-        }
 
         ul {
             display: flex;
