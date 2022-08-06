@@ -22,6 +22,13 @@ import { Component, ViewEncapsulation } from '@angular/core';
     `,
     styles: [`
 
+        div {
+            background: skyblue;
+            border-radius: 0.5em;
+            margin: 1.5em 0;
+            padding: 1em 1.2em;
+        }
+
         ul {
             display: flex;
             list-style: none;
