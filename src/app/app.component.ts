@@ -1,9 +1,9 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
-  selector: 'saa-app',
-  encapsulation: ViewEncapsulation.None,
-  template: `
+    selector: 'saa-app',
+    encapsulation: ViewEncapsulation.ShadowDom,
+    template: `
       <header>
           <h1>Styling Angular Applications</h1>
           <em>For Modern Angular Applications</em>
@@ -13,9 +13,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
           <saa-app-nav></saa-app-nav>
         Some Minor text below inner component
       </div>
-  `,
-    styles: [`
-
+    <style>
         h1 {
             background: blue;
             border-radius: 1.5em;
@@ -29,6 +27,9 @@ import { Component, ViewEncapsulation } from '@angular/core';
             margin: 1.5em 0;
             padding: 1em 1.2em;
         }
+    </style>
+  `,
+    styles: [`
 
 
     `]
