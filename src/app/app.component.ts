@@ -10,7 +10,8 @@ import { Component, ViewEncapsulation } from '@angular/core';
       </header>
       <div>
         Some Minor text above inner component
-          <saa-app-nav></saa-app-nav>
+          <saa-app-nav class="example"></saa-app-nav>
+          <saa-app-nav  ></saa-app-nav>
         Some Minor text below inner component
       </div>
     <style>
