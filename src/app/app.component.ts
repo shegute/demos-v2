@@ -10,9 +10,24 @@ import { Component, ViewEncapsulation } from '@angular/core';
       </header>
       <div class="example">
         Some Minor text above inner component
-          <saa-app-nav ></saa-app-nav>
-          <saa-app-nav  ></saa-app-nav>
+          <saa-app-nav >
+            <li>
+               <a class="elementAndClassExample" href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">Prerequisites</a>
+            </li>
+            <li>
+                <a href="#">Modules</a>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+          </saa-app-nav>
         Some Minor text below inner component
+
+        <a href="#">Contact Us</a>
+        <!-- Due to the ng-deep <a> tag css, even this link will have the css applied even though its outside of the component with the css setting, BAD! -->
       </div>
     <style>
         h1 {

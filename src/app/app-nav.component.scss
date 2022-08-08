@@ -1,4 +1,4 @@
- 
+
 
         :host-context(.example) {
             background: skyblue;
@@ -15,7 +15,7 @@
             padding: 0;
         }
 
-        a {
+        ::ng-deep  a {
             color: #fff;
             padding: 0 1em;
             text-decoration: none;
@@ -25,7 +25,7 @@
         //Will only be applied to <a> tags and if the class name matches 'elementAndClassExample'
         //The rest of any other <a> tags in the page that dont have the class name will have the above css settings applied.
           color: red;
-       
+
           padding: 0 1em;
           text-decoration: none;
         }
@@ -33,4 +33,3 @@
         a:hover {
             text-decoration: underline;
         }
- 
