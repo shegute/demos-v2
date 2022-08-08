@@ -15,7 +15,8 @@
             padding: 0;
         }
 
-        ::ng-deep  a {
+        //limiting ng-deep to only apply the css setting within the host component and under a particular (ul) type element.
+        :host ul ::ng-deep  a {
             color: #fff;
             padding: 0 1em;
             text-decoration: none;
